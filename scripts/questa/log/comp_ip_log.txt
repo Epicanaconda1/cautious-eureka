@@ -1,0 +1,536 @@
+
+------- comp_ip.tcl -------
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:30 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/axi4pifb/psif_axi4pifb_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling entity psif_axi4pifb
+End time: 21:38:30 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:30 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/axi4pifb/psif_axi4pifb_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package psif_pck
+-- Compiling architecture rtl of psif_axi4pifb
+-- Loading entity psif_axi4pifb
+End time: 21:38:30 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:30 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/odi/psif_odi_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package odi_pck
+-- Loading package psif_pck
+-- Compiling entity odi_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/odi/psif_odi_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package odi_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of odi_reg
+-- Loading entity odi_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/dti/psif_dti_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dti_pck
+-- Loading package psif_pck
+-- Compiling entity dti_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/dti/psif_dti_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package dti_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of dti_reg
+-- Loading entity dti_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/zu/psif_zu_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Loading package psif_pck
+-- Compiling entity zu_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/zu/psif_zu_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package zu_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of zu_reg
+-- Loading entity zu_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/scu/psif_scu_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package scu_pck
+-- Loading package psif_pck
+-- Compiling entity scu_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/scu/psif_scu_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package scu_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of scu_reg
+-- Loading entity scu_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/aui/psif_aui_reg_ent.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package aui_pck
+-- Loading package psif_pck
+-- Compiling entity aui_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/if/psif/hdl/pif/aui/psif_aui_reg_rtl.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package aui_pck
+-- Loading package psif_pck
+-- Compiling architecture rtl of aui_reg
+-- Loading entity aui_reg
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_210.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_210
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_210
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_21.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_21
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_21
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_2
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_210_1_VITIS_LOOP_211_2
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_22.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_22
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_22
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_24.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_24
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_24
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_26.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_26
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_26
+End time: 21:38:31 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:31 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_2
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_256_2
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_33.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_33
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_33
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_35.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_35
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_35
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_37.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_37
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_37
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_3.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_3
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_263_3
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_304_28.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_304_28
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_304_28
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_304_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_304_2
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_304_2
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_345_1_VITIS_LOOP_346_29.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_345_1_VITIS_LOOP_346_29
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_345_1_VITIS_LOOP_346_29
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_345_1_VITIS_LOOP_346_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_345_1_VITIS_LOOP_346_2
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_345_1_VITIS_LOOP_346_2
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_512_1_VITIS_LOOP_513_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_512_1_VITIS_LOOP_513_2
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_512_1_VITIS_LOOP_513_2
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_531_4_VITIS_LOOP_532_5.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_531_4_VITIS_LOOP_532_5
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_531_4_VITIS_LOOP_532_5
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_540_6_VITIS_LOOP_541_7.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_540_6_VITIS_LOOP_541_7
+-- Compiling architecture behav of aes_inv_cipher_aes_inv_cipher_Pipeline_VITIS_LOOP_540_6_VITIS_LOOP_541_7
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_coef_mult_int.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_coef_mult_int
+-- Compiling architecture behav of aes_inv_cipher_coef_mult_int
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_flow_control_loop_pipe_sequential_init.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_flow_control_loop_pipe_sequential_init
+-- Compiling architecture behav of aes_inv_cipher_flow_control_loop_pipe_sequential_init
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_inv_s_box_ROM_AUTO_1R.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity aes_inv_cipher_inv_s_box_ROM_AUTO_1R
+-- Compiling architecture rtl of aes_inv_cipher_inv_s_box_ROM_AUTO_1R
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_Multiply.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_Multiply
+-- Compiling architecture behav of aes_inv_cipher_Multiply
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_regslice_both.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_regslice_both
+-- Compiling architecture behave of aes_inv_cipher_regslice_both
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher_sparsemux_9_2_8_1_1
+-- Compiling architecture behav of aes_inv_cipher_sparsemux_9_2_8_1_1
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(65): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(68): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(71): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(74): (vcom-1937) Choice in ordinary CASE statement alternative must be locally static.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(65): (vcom-1322) Case statement choice (generic "CASE0") cannot be checked for uniqueness.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(68): (vcom-1322) Case statement choice (generic "CASE1") cannot be checked for uniqueness.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(71): (vcom-1322) Case statement choice (generic "CASE2") cannot be checked for uniqueness.
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_sparsemux_9_2_8_1_1.vhd(74): (vcom-1322) Case statement choice (generic "CASE3") cannot be checked for uniqueness.
+End time: 21:38:32 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 9
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:32 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_state_RAM_AUTO_1R1W.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity aes_inv_cipher_state_RAM_AUTO_1R1W
+-- Compiling architecture rtl of aes_inv_cipher_state_RAM_AUTO_1R1W
+** Warning: /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher_state_RAM_AUTO_1R1W.vhd(42): (vcom-1236) Shared variables must be of a protected type.
+End time: 21:38:33 on Nov 17,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 2
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:33 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug "+cover" -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/core/zu/hdl/aes_inv_cipher.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes_inv_cipher
+-- Compiling architecture behav of aes_inv_cipher
+End time: 21:38:33 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:33 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/ip/zedboard_xc7z020/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clk_wiz_0_clk_wiz
+-- Compiling architecture STRUCTURE of clk_wiz_0_clk_wiz
+-- Compiling entity clk_wiz_0
+-- Compiling architecture STRUCTURE of clk_wiz_0
+-- Loading entity clk_wiz_0_clk_wiz
+End time: 21:38:36 on Nov 17,2025, Elapsed time: 0:00:03
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:36 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/ip/zedboard_xc7z020/fifo_512x32bit/fifo_512x32bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo_512x32bit_xpm_cdc_gray
+-- Compiling architecture STRUCTURE of fifo_512x32bit_xpm_cdc_gray
+-- Compiling entity \fifo_512x32bit_xpm_cdc_gray__2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_gray__2\
+-- Compiling entity fifo_512x32bit_xpm_cdc_single
+-- Compiling architecture STRUCTURE of fifo_512x32bit_xpm_cdc_single
+-- Compiling entity \fifo_512x32bit_xpm_cdc_single__2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_single__2\
+-- Compiling entity fifo_512x32bit_xpm_cdc_sync_rst
+-- Compiling architecture STRUCTURE of fifo_512x32bit_xpm_cdc_sync_rst
+-- Compiling entity \fifo_512x32bit_xpm_cdc_sync_rst__2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_sync_rst__2\
+-- Compiling entity \fifo_512x32bit_xpm_cdc_sync_rst__parameterized2\
+-- Compiling architecture STRUCTURE of \fifo_512x32bit_xpm_cdc_sync_rst__parameterized2\
+-- Compiling entity fifo_512x32bit
+-- Compiling architecture STRUCTURE of fifo_512x32bit
+End time: 21:38:37 on Nov 17,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:37 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/ip/zedboard_xc7z020/fifo_512x16bit/fifo_512x16bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo_512x16bit_xpm_cdc_async_rst
+-- Compiling architecture STRUCTURE of fifo_512x16bit_xpm_cdc_async_rst
+-- Compiling entity \fifo_512x16bit_xpm_cdc_async_rst__1\
+-- Compiling architecture STRUCTURE of \fifo_512x16bit_xpm_cdc_async_rst__1\
+-- Compiling entity fifo_512x16bit_xpm_cdc_gray
+-- Compiling architecture STRUCTURE of fifo_512x16bit_xpm_cdc_gray
+-- Compiling entity \fifo_512x16bit_xpm_cdc_gray__2\
+-- Compiling architecture STRUCTURE of \fifo_512x16bit_xpm_cdc_gray__2\
+-- Compiling entity fifo_512x16bit_xpm_cdc_single
+-- Compiling architecture STRUCTURE of fifo_512x16bit_xpm_cdc_single
+-- Compiling entity \fifo_512x16bit_xpm_cdc_single__2\
+-- Compiling architecture STRUCTURE of \fifo_512x16bit_xpm_cdc_single__2\
+-- Compiling entity fifo_512x16bit
+-- Compiling architecture STRUCTURE of fifo_512x16bit
+End time: 21:38:37 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:37 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/ip/zedboard_xc7z020/fifo_512x8bit/fifo_512x8bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fifo_512x8bit_xpm_cdc_gray
+-- Compiling architecture STRUCTURE of fifo_512x8bit_xpm_cdc_gray
+-- Compiling entity \fifo_512x8bit_xpm_cdc_gray__2\
+-- Compiling architecture STRUCTURE of \fifo_512x8bit_xpm_cdc_gray__2\
+-- Compiling entity fifo_512x8bit_xpm_cdc_single
+-- Compiling architecture STRUCTURE of fifo_512x8bit_xpm_cdc_single
+-- Compiling entity \fifo_512x8bit_xpm_cdc_single__2\
+-- Compiling architecture STRUCTURE of \fifo_512x8bit_xpm_cdc_single__2\
+-- Compiling entity fifo_512x8bit_xpm_cdc_sync_rst
+-- Compiling architecture STRUCTURE of fifo_512x8bit_xpm_cdc_sync_rst
+-- Compiling entity \fifo_512x8bit_xpm_cdc_sync_rst__2\
+-- Compiling architecture STRUCTURE of \fifo_512x8bit_xpm_cdc_sync_rst__2\
+-- Compiling entity fifo_512x8bit
+-- Compiling architecture STRUCTURE of fifo_512x8bit
+End time: 21:38:37 on Nov 17,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 1
+** Warning: (vcom-13379) The use of compiler option -linedebug is deprecated. This option will be removed in future releases.
+Start time: 21:38:37 on Nov 17,2025
+vcom -2008 -nologo -linedebug "+acc=nprv" -fsmdebug -modelsimini /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/scripts/questa/modelsim.ini -work /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/top/libs/mla_lib /uio/hume/student-u57/sayomsb/Documents/in5200/lab3/in5200_lab3/ip/zedboard_xc7z020/bram_truedualport_512x32bit/bram_truedualport_512x32bit_sim_netlist.vhdl 
+-- Loading package STANDARD
+-- Compiling entity bram_truedualport_512x32bit
+-- Compiling architecture STRUCTURE of bram_truedualport_512x32bit
+End time: 21:38:38 on Nov 17,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1

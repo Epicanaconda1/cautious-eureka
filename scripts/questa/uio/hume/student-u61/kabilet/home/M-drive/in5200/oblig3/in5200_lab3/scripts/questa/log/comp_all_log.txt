@@ -1,0 +1,2 @@
+------- comp_all.tcl -------
+Reading toolsetupfile file: uio/hume/student-u61/kabilet/home/M-drive/in5200/oblig3/in5200_lab3/scripts/toolsetup.tcl.
