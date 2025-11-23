@@ -18,7 +18,8 @@ package base_seq_pkg;
    import top_psif_vreguvm_pkg_uvm::*;
    import top_psif_vreguvm_pkg_uvm_rw::*;
 
-   //import spi_4wire_agent_pkg::*;
+   //OPPGAVE 3 LAB 5
+   import spi_4wire_agent_pkg::*;
    import kb_axi4stream_agent_pkg::*;
    
    `include "uvm_macros.svh";
