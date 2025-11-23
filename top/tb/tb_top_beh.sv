@@ -13,11 +13,15 @@ module tb_top ();
 
    import psif_odi_spi_pkg::*;
    import psif_scu_pkg::*;
-//   import psif_dti_spi_pkg::*;
-//   import psif_dti_spi_module_pkg::*;
+   import psif_dti_spi_pkg::*;
+   import psif_dti_spi_module_pkg::*;
+
    import psif_zu_pkg::*;
    import psif_zu_csim_pkg::*;
    import psif_aui_aurora_pkg::*;
+
+   //Added task 1 oblig 5
+   import psif_dti_spi_loop_pkg::*;
 
    wire [14:0] ddr_addr;  
    wire [2:0] ddr_ba;      
@@ -83,10 +87,8 @@ module tb_top ();
    logic    rf_txp;           
    logic    rf_txn;
 
-   logic       top_spi_4wire_if_dmy_ce;        // 4 wire SPI Agent Interface dummy signal
-   logic       top_spi_4wire_if_dmy_sclk;      // 4 wire SPI Agent Interface dummy signal
-   logic       top_spi_4wire_if_dmy_sdi;       // 4 wire SPI Agent Interface dummy signal
-   logic       top_spi_4wire_if_dmy_sdo;       // 4 wire SPI Agent Interface dummy signal   
+   // Instantiate 4-wire SPI agent interface
+   spi_4wire_agent_if top_spi_4wire_if(refclk);
      
    // External Aurora INIT_CLK for Aurora Example Design
    initial begin
@@ -147,8 +149,8 @@ module tb_top ();
    oled_spi_agent_if top_oled_spi_if(refclk);
 
    // Spi_4wire interface  
-   // spi_4wire_agent_if top_spi_4wire_if(refclk);
-   
+   // (instantiated above)
+    
     
    `ifdef SETUP_KBAXI4LITE
       // Instantiating KONGSBERG AXI4-Lite interface     
@@ -214,22 +216,18 @@ module tb_top ();
                
      .led_8bit                      (led_8bit),
 
-//     .dti_ce                        (top_spi_4wire_if.ce),        // 4 wire SPI Agent Interface signal
-//     .dti_sclk                      (top_spi_4wire_if.sclk),      // 4 wire SPI Agent Interface signal
-//     .dti_sdi                       (top_spi_4wire_if.sdi),       // 4 wire SPI Agent Interface signal
-//     .dti_sdo                       (top_spi_4wire_if.sdo),       // 4 wire SPI Agent Interface signal
-     .dti_ce                        (top_spi_4wire_if_dmy_ce),        // 4 wire SPI Agent Interface signal
-     .dti_sclk                      (top_spi_4wire_if_dmy_sclk),      // 4 wire SPI Agent Interface signal
-     .dti_sdi                       (top_spi_4wire_if_dmy_sdi),       // 4 wire SPI Agent Interface signal
-     .dti_sdo                       (top_spi_4wire_if_dmy_sdo),       // 4 wire SPI Agent Interface signal
+   .dti_ce                        (top_spi_4wire_if.ce),        // 4 wire SPI Agent Interface signal
+   .dti_sclk                      (top_spi_4wire_if.sclk),      // 4 wire SPI Agent Interface signal
+   .dti_sdi                       (top_spi_4wire_if.sdi),       // 4 wire SPI Agent Interface signal
+   .dti_sdo                       (top_spi_4wire_if.sdo),       // 4 wire SPI Agent Interface signal
 
      .rf_gt_refclk1_p               (rf_gt_refclk1_p),  // AUI (Aurora) signals used in simulation only        
-     .rf_gt_refclk1_n  		    (rf_gt_refclk1_n),  
-     .rf_rxp           		    (rf_rxp),
-     .rf_rxn           		    (rf_rxn),           
-     .rf_txp           		    (rf_txp),           			   
-     .rf_txn			    (rf_txn),           
-					   
+     .rf_gt_refclk1_n   		    (rf_gt_refclk1_n),  
+     .rf_rxp            		    (rf_rxp),
+     .rf_rxn            		    (rf_rxn),           
+     .rf_txp            		    (rf_txp),            		   
+     .rf_txn		    (rf_txn),           
+		   
      .oled_sdin                     (top_oled_spi_if.oled_sdin),  // OLED_SPI Agent Interface signal
      .oled_sclk                     (top_oled_spi_if.oled_sclk),  // OLED_SPI Agent Interface signal
      .oled_dc                       (top_oled_spi_if.oled_dc),    // OLED_SPI Agent Interface signal
@@ -240,8 +238,8 @@ module tb_top ();
    );
 
    
-   // OPPGAVE 5
-   aurora_8b10b_0_exdes aurora_8b10b_0_exdes_inst( 
+/* -----\/----- EXCLUDED -----\/-----
+   aurora_8b10b_0_exdes  aurora_8b10b_0_exdes_inst( 
      .RESET(aurora_exdes_reset),
      .HARD_ERR(aurora_hard_err),
      .SOFT_ERR(aurora_soft_err),
@@ -282,36 +280,86 @@ module tb_top ();
      .TXN(rf_rxn)
    );
 
-    //____________________________Aurora Resets begin ____________________________
-   
-    initial
-    begin
-        aurora_exdes_reset = 1'b1;
-        #31us aurora_exdes_reset = 1'b0;
-    end
-   
-    //Simultate the global Aurora reset that occurs after configuration at the beginning
-    //of the simulation. Note that both GT smart models use the same global signals.
+ -----/\----- EXCLUDED -----/\----- */
+
+ //////////////Added back
+     aurora_8b10b_0_exdes  aurora_8b10b_0_exdes_inst( 
+      .RESET(aurora_exdes_reset),
+      .HARD_ERR(aurora_hard_err),
+      .SOFT_ERR(aurora_soft_err),
+      .FRAME_ERR(aurora_frame_err),
+      .ERR_COUNT(aurora_err_count),
+     
+      // CRC Status
+      .CRC_PASS_FAIL_N(aurora_crc_pass_fail_n),
+      .CRC_VALID(aurora_crc_valid),
+      // Added by Roarsk
+      .GT_POWERGOOD(gt_powergood_exdes),
+
+     
+      .LANE_UP(aurora_lane_up),
+      .CHANNEL_UP(aurora_channel_up),
+      .INIT_CLK_P(aurora_init_clk_p),
+      .INIT_CLK_N(aurora_init_clk_n),
+      .GT_RESET_IN(aurora_gt_reset_in),
+
+      // Added by Roarsk
+      .AURORA_USER_CLK(kb_axi4stream_if.CLK),
+       .TX_TDATA(kb_axi4stream_if.TX_TDATA),
+      .TX_TVALID(kb_axi4stream_if.TX_TVALID),
+       .TX_TKEEP(kb_axi4stream_if.TX_TKEEP),
+       .TX_TLAST(kb_axi4stream_if.TX_TLAST),
+      .TX_TREADY(kb_axi4stream_if.TX_TREADY),
+      .RX_TDATA(kb_axi4stream_if.RX_TDATA),
+      .RX_TVALID(kb_axi4stream_if.RX_TVALID),
+      .RX_TKEEP(kb_axi4stream_if.RX_TKEEP),
+      .RX_TLAST(kb_axi4stream_if.RX_TLAST),
+      
+      .GT_REFCLK_P(rf_gt_refclk1_p),
+      .GT_REFCLK_N(rf_gt_refclk1_n),
+      // GT I/O
+      .RXP(rf_txp), // Output from DUT is input to example design test unit
+      .RXN(rf_txn),
+      .TXP(rf_rxp), // Input to DUT is output from example design test unit
+      .TXN(rf_rxn)
+    );
+
+    ////////////////////Added back
+
+
+
+     //____________________________Aurora Resets begin ____________________________
+    
+     initial
+     begin
+         aurora_exdes_reset = 1'b1;
+         #31us aurora_exdes_reset = 1'b0;
+     end
+    
+     //Simultate the global Aurora reset that occurs after configuration at the beginning
+     //of the simulation. Note that both GT smart models use the same global signals.
 //    assign glbl.GSR = aurora_gsr_r;
 //    assign glbl.GTS = aurora_gts_r;
 
-    initial
-        begin
-            aurora_gts_r    = 1'b0;       
-            aurora_gsr_r    = 1'b1;
-            aurora_gt_reset_in = 1'b1;
-            #35us;
-            aurora_gsr_r    = 1'b0;
-            aurora_gt_reset_in = 1'b0;
-            repeat(10) @(posedge aurora_init_clk_p);
-            aurora_gt_reset_in = 1'b1;
-            repeat(10) @(posedge aurora_init_clk_p);
-            aurora_gt_reset_in = 1'b0;
-        end
+     initial
+         begin
+             aurora_gts_r    = 1'b0;       
+             aurora_gsr_r    = 1'b1;
+             aurora_gt_reset_in = 1'b1;
+             #35us;
+             aurora_gsr_r    = 1'b0;
+             aurora_gt_reset_in = 1'b0;
+             repeat(10) @(posedge aurora_init_clk_p);
+             aurora_gt_reset_in = 1'b1;
+             repeat(10) @(posedge aurora_init_clk_p);
+             aurora_gt_reset_in = 1'b0;
+         end
 
+     //____________________________Aurora Resets end ____________________________
+    
+       
     //____________________________Aurora Resets end ____________________________
-   
-      
+
    // FPGA processor SW reset. This Signal is Active HIGH
 //   assign mla_top.G_PS.mla_ps.pl_rst[0]       = fpga_rst;   
 
@@ -383,7 +431,6 @@ module tb_top ();
 //   assign psif_interrupt_if.irq = mla_top.psif_irq;
 //   assign psif_interrupt_if.irq = 0; // Interrupt set to zero due to currently not used
 
-
    initial
    begin
      alarm_ack_btn= '0;
@@ -391,10 +438,6 @@ module tb_top ();
      while (1) begin
        #10ns;
        if (led_8bit[7]==1) begin
-         alarm_ack_btn= '1;
-         #10ns;
-         alarm_ack_btn= '0;
-         #10ns;
          alarm_ack_btn= '1;
          #10ns;
          alarm_ack_btn= '0;
@@ -458,7 +501,7 @@ module tb_top ();
 
       uvm_config_db #( virtual oled_spi_agent_if )::set( null , "uvm_test_top", "TOP_OLED_SPI_IF", top_oled_spi_if);
 
-      // uvm_config_db #( virtual spi_4wire_agent_if )::set( null , "uvm_test_top", "TOP_SPI_4WIRE_IF", top_spi_4wire_if);
+      uvm_config_db #( virtual spi_4wire_agent_if )::set( null , "uvm_test_top", "TOP_SPI_4WIRE_IF", top_spi_4wire_if);
 
       uvm_config_db #( virtual kb_axi4stream_agent_if )::set( null , "uvm_test_top", "TOP_KB_AXI4STREAM_IF", kb_axi4stream_if);        
       
@@ -475,6 +518,6 @@ module tb_top ();
         
       // Run the selected test specified by +UVM_TESTNAME
       run_test();     
-    end
+    end  
   
 endmodule // tb_top
