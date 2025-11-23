@@ -56,7 +56,8 @@
    // Declare IRQ sequencers
    // uvm_sequencer #(interrupt_handler_item) m_irq_psif_sqr;
     
-   // uvm_sequencer #(spi_4wire_agent_item) m_spi_4wire_sqr;    
+   //OPPGAVE 3 LAB 5
+   uvm_sequencer #(spi_4wire_agent_item) m_spi_4wire_sqr;    
        
    //##############################################################
    // Declarations used in regw, regr and regc and 
