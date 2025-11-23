@@ -28,10 +28,10 @@ class base_test extends uvm_test;
 
    typedef tb_env #(AXI4_ADDRESS_WIDTH,
                     AXI4_RDATA_WIDTH,
-	 	    AXI4_WDATA_WIDTH,
+	            AXI4_WDATA_WIDTH,
 		    AXI4_ID_WIDTH,
 		    AXI4_USER_WIDTH,
-	  	    AXI4_REGION_MAP_SIZE
+	    	AXI4_REGION_MAP_SIZE
                    ) tb_env_t;
 
    tb_env_t m_env;
@@ -40,7 +40,7 @@ class base_test extends uvm_test;
 `ifdef SETUP_KBAXI4LITE
 
      uvm_sequencer #(kb_axi4lite_agent_item) m_psif_axi4_sqr;    
-     //uvm_sequencer #(spi_4wire_agent_item) m_spi_4wire_sqr;    
+   uvm_sequencer #(spi_4wire_agent_item) m_spi_4wire_sqr;    
     
      typedef kb_axi4lite_agent_config config_t;
      typedef uvm_reg_predictor #(kb_axi4lite_agent_item) reg_predictor_t;
@@ -62,26 +62,26 @@ class base_test extends uvm_test;
     
      
      typedef axi4_master_rw_transaction #(AXI4_ADDRESS_WIDTH,
-    					AXI4_RDATA_WIDTH,
-    					AXI4_WDATA_WIDTH,
-    					AXI4_ID_WIDTH,
-    					AXI4_USER_WIDTH,
-    					AXI4_REGION_MAP_SIZE)  axi4_rw_item_t;    
+							AXI4_RDATA_WIDTH,
+							AXI4_WDATA_WIDTH,
+							AXI4_ID_WIDTH,
+							AXI4_USER_WIDTH,
+							AXI4_REGION_MAP_SIZE)  axi4_rw_item_t;    
      
      typedef reg2axi4lite_adapter #(axi4_rw_item_t,
-    				  AXI4_ADDRESS_WIDTH  , 
-    				  AXI4_RDATA_WIDTH    ,
-    				  AXI4_WDATA_WIDTH    ,
-    				  AXI4_ID_WIDTH       ,
-    				  AXI4_USER_WIDTH     ,
-    				  AXI4_REGION_MAP_SIZE) reg2axi4lite_adapter_t;   
+     					  AXI4_ADDRESS_WIDTH  , 
+     					  AXI4_RDATA_WIDTH    ,
+     					  AXI4_WDATA_WIDTH    ,
+     					  AXI4_ID_WIDTH       ,
+     					  AXI4_USER_WIDTH     ,
+     					  AXI4_REGION_MAP_SIZE) reg2axi4lite_adapter_t;   
     
      typedef axi4lite_reg_predictor #(axi4_rw_item_t,
-    				    AXI4_RDATA_WIDTH    ,
-    				    AXI4_WDATA_WIDTH    ,
-    				    AXI4_ID_WIDTH       ,
-    				    AXI4_USER_WIDTH     ,
-    				    AXI4_REGION_MAP_SIZE) reg_predictor_t;
+     						AXI4_RDATA_WIDTH    ,
+     						AXI4_WDATA_WIDTH    ,
+     						AXI4_ID_WIDTH       ,
+     						AXI4_USER_WIDTH     ,
+     						AXI4_REGION_MAP_SIZE) reg_predictor_t;
         
      reg2axi4lite_adapter_t m_psif_axi4lite_adapter_all;
      reg2axi4lite_adapter_t m_psif_axi4lite_adapter_rw;
@@ -121,7 +121,7 @@ class base_test extends uvm_test;
    oled_spi_agent_config  m_oled_spi_agent_cfg;
 
    // Declare spi_4wire agent config
-   // spi_4wire_agent_config  m_spi_4wire_agent_cfg;
+   spi_4wire_agent_config  m_spi_4wire_agent_cfg;
  
    // AXI4STREAM agent config      
    kb_axi4stream_agent_config m_kb_axi4stream_agent_cfg;
@@ -142,8 +142,8 @@ class base_test extends uvm_test;
       m_reset_agent_cfg=reset_agent_config::type_id::create("m_reset_agent_cfg");
       
       // This statement sets the reset_if in m_reset_cfg called reset_if to the TOP_RESET_IF.
-      if(!uvm_config_db #( virtual reset_agent_if )::get( this , "", "TOP_RESET_IF" , // NOTE: TOP_RESET_IF name is registered in the uvm_config_db in the tb_top_beh.sv testbench file.
-							  m_reset_agent_cfg.reset_if ))  // NOTE: reset_if is of type reset_agent_if declared in reset_agent config class.
+      if(!uvm_config_db #( virtual reset_agent_if )::get( this , "", "TOP_RESET_IF" , // NOTE: TOP_RESET_IF name is registered in the uvm_config_db in the tb_top_beh.sv file.
+					  m_reset_agent_cfg.reset_if ))  // NOTE: reset_if is of type reset_agent_if declared in reset_agent config class.
          `uvm_error(get_type_name() , "uvm_config_db #(virtual reset_if::get cannot find resource TOP_RESET_IF" );      
 
       // Publish config for reset handler
@@ -160,7 +160,7 @@ class base_test extends uvm_test;
       // This statement sets the interrupt_if in m_psif_irq_handler_cfg called irq_if to the IRQ_HANDLER_PSIF.
       //   The interrupt irq_if from the DUT is assigned to the psif_interrupt_if  irq  pins in the tb_top_beh.sv file. 
       if(!uvm_config_db #( virtual interrupt_if#(32) )::get( this , "", "IRQ_HANDLER_PSIF" , // NOTE: IRQ_HANDLER_PSIF name is registered in the uvm_config_db in the tb_top_beh.sv testbench file.
-							     m_psif_irq_handler_cfg.irq_if ))  // NOTE: irq_if is of type interrupt_if declared in interrupt config class.
+					     m_psif_irq_handler_cfg.irq_if ))  // NOTE: irq_if is of type interrupt_if declared in interrupt config class.
          `uvm_error(get_type_name() , "uvm_config_db #(virtual interrupt_if#(32)::get cannot find resource IRQ_HANDLER_PSIF" );      
 
       // Publish config for irq handler
@@ -176,7 +176,7 @@ class base_test extends uvm_test;
       
       // This statement sets the oled_spi_if in m_oled_spi_cfg called oled_spi_if to the TOP_OLED_SPI_IF.
       if(!uvm_config_db #( virtual oled_spi_agent_if )::get( this , "", "TOP_OLED_SPI_IF" , // NOTE: TOP_OLED_SPI_IF name is registered in the uvm_config_db in the tb_top_beh.sv testbench file.
-							  m_oled_spi_agent_cfg.oled_spi_if ))  // NOTE: oled_spi_if is of type oled_spi_agent_if declared in oled_spi_agent config class.
+					  m_oled_spi_agent_cfg.oled_spi_if ))  // NOTE: oled_spi_if is of type oled_spi_agent_if declared in oled_spi_agent config class.
          `uvm_error(get_type_name() , "uvm_config_db #(virtual oled_spi_if::get cannot find resource TOP_OLED_SPI_IF" );      
 
       // Publish config for oled_spi handler
@@ -187,17 +187,15 @@ class base_test extends uvm_test;
       //# SPI_4WIRE handler config
       //################################################
 
-/* -----\/----- EXCLUDED -----\/-----
       m_spi_4wire_agent_cfg=spi_4wire_agent_config::type_id::create("m_spi_4wire_agent_cfg");
       
       // This statement sets the spi_4wire_if in m_spi_4wire_cfg called spi_4wire_if to the TOP_SPI_4WIRE_IF.
       if(!uvm_config_db #( virtual spi_4wire_agent_if )::get( this , "", "TOP_SPI_4WIRE_IF" , // NOTE: TOP_SPI_4WIRE_IF name is registered in the uvm_config_db in the tb_top_beh.sv testbench file.
-							  m_spi_4wire_agent_cfg.spi_4wire_if ))  // NOTE: spi_4wire_if is of type spi_4wire_agent_if declared in spi_4wire_agent config class.
+                  m_spi_4wire_agent_cfg.spi_4wire_if ))  // NOTE: spi_4wire_if is of type spi_4wire_agent_if declared in spi_4wire_agent config class.
          `uvm_error(get_type_name() , "uvm_config_db #(virtual spi_4wire_if::get cannot find resource TOP_SPI_4WIRE_IF" );      
 
       // Publish config for spi_4wire handler
       uvm_config_db #(spi_4wire_agent_config  )::set( this , "*m_env.m_spi_4wire_agent*" ,"spi_4wire_agent_config" , m_spi_4wire_agent_cfg );
- -----/\----- EXCLUDED -----/\----- */
 
 
       //################################################
@@ -208,7 +206,7 @@ class base_test extends uvm_test;
       
       // This statement sets the kb_axi4stream_if in m_kb_axi4stream_cfg called kb_axi4stream_if to the TOP_KB_AXI4STREAM_IF.
       if(!uvm_config_db #( virtual kb_axi4stream_agent_if )::get( this , "", "TOP_KB_AXI4STREAM_IF" , // NOTE: TOP_KB_AXI4STREAM_IF name is registered in the uvm_config_db in the tb_top_beh.sv testbench file.
-							     m_kb_axi4stream_agent_cfg.kb_axi4stream_if ))  // NOTE: kb_axi4stream_if is of type kb_axi4stream_agent_if declared in kb_axi4stream_agent config class.
+					     m_kb_axi4stream_agent_cfg.kb_axi4stream_if ))  // NOTE: kb_axi4stream_if is of type kb_axi4stream_agent_if declared in kb_axi4stream_agent config class.
          `uvm_error(get_type_name() , "uvm_config_db #(virtual kb_axi4stream_if::get cannot find resource TOP_KB_AXI4STREAM_IF" );      
 
       // Publish config for kb_axi4stream handler
@@ -225,7 +223,7 @@ class base_test extends uvm_test;
       
       // Here is the DUT interface "connected" to the kb_axi4lite agent in the testbench!! 
       if(!uvm_config_db #(virtual kb_axi4lite_agent_if )::get( this , "", "PSIF_AXI4LITE_MASTER_IF" , // NOTE: PSIF_AXI4LITE_MASTER_IF name is registered in the uvm_config_db in the tb_top_beh.sv testbench file. 
-							       m_psif_master_cfg.vif ))   // NOTE: vif is of type kb_axi4lite_agent_if
+						       m_psif_master_cfg.vif ))   // NOTE: vif is of type kb_axi4lite_agent_if
 	      `uvm_error(get_type_name() , "Can't find resource PSIF_AXI4LITE_MASTER_IF" );      
       
       m_psif_master_cfg.is_active=UVM_ACTIVE;
@@ -260,7 +258,7 @@ class base_test extends uvm_test;
 
      
    `endif
-    
+     
       //################################################
       //# Create Env
       //################################################ 
@@ -297,7 +295,7 @@ class base_test extends uvm_test;
       m_psif_axi4lite_adapter_all =reg2axi4lite_adapter_t::type_id::create("m_psif_axi4lite_adapter_all");
       m_psif_axi4lite_adapter_rw  =reg2axi4lite_adapter_t::type_id::create("m_psif_axi4lite_adapter_rw");
    `endif
-   
+
        //################################################
       //# Predictor for register bus
       //################################################
@@ -311,7 +309,6 @@ class base_test extends uvm_test;
       m_printer.knobs.depth = 5;
  
    endfunction
-
 
 
 
@@ -369,6 +366,5 @@ class base_test extends uvm_test;
       factory.print();
 
    endfunction // end_of_elaboration_phase   
-
    
 endclass // base_test
